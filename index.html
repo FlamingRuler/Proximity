@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proximity</title>
+
+    <!-- PWA and Icon Links -->
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    
+    <!-- Theme Color for Browsers -->
+    <meta name="theme-color" content="#3367D6">
+    
+    <!-- iOS support for PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Proximity">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button id="theme-switcher"></button>
+        <h1>Proximity</h1>
+        <div id="user-profile">
+            <strong>My Username:</strong> <span id="username-display"></span>
+        </div>
+    </header>
+
+    <main>
+        <div id="status-area">
+            <h2>Connected Peers</h2>
+            <ul id="peer-list">
+                <li>None</li>
+            </ul>
+        </div>
+
+        <div id="messages-area">
+            <h2>Message Feed</h2>
+            <div id="message-feed">
+                <!-- Messages will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="input-area">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+        <button id="scan-button">Scan for Users</button>
+        <div id="app-version">v1.0.0</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
